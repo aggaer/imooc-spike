@@ -1,11 +1,11 @@
 package main
 
 import (
-	"../backend/web/controllers"
-	"../common"
-	"../repositories"
-	"../services"
 	"context"
+	"github.com/aggaer/imooc-spike/backend/web/controllers"
+	"github.com/aggaer/imooc-spike/common"
+	"github.com/aggaer/imooc-spike/repositories"
+	"github.com/aggaer/imooc-spike/services"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/mvc"
 	"github.com/opentracing/opentracing-go/log"
@@ -20,7 +20,7 @@ func main() {
 	template := iris.HTML("./backend/web/views", ".html").Layout("shared/layout.html").Reload(true)
 	app.RegisterView(template)
 	//4.设置模板目标
-	app.HandleDir("/assets", "./backend/web/assets")
+	app.Handle("/assets", "./backend/web/assets")
 	//出现异常跳转到指定页面
 	app.OnAnyErrorCode(func(ctx iris.Context) {
 		ctx.ViewData("message", ctx.Values().GetStringDefault("message", "访问的页面出错！"))

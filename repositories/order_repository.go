@@ -1,9 +1,9 @@
 package repositories
 
 import (
-	"../common"
-	"../datamodels"
 	"database/sql"
+	"github.com/aggaer/imooc-spike/common"
+	"github.com/aggaer/imooc-spike/datamodels"
 	"strconv"
 )
 

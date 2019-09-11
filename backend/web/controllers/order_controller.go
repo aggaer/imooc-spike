@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"../../../services"
+	"github.com/aggaer/imooc-spike/services"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/mvc"
 )
@@ -23,5 +23,4 @@ func (o *OrderController) Get() mvc.View {
 			"order": orderArray,
 		},
 	}
-
 }

@@ -1,8 +1,8 @@
 package services
 
 import (
-	"../datamodels"
-	"../repositories"
+	"github.com/aggaer/imooc-spike/datamodels"
+	"github.com/aggaer/imooc-spike/repositories"
 )
 
 type IProductService interface {

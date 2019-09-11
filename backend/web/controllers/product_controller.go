@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"../../../common"
-	"../../../datamodels"
-	"../../../services"
+	"github.com/aggaer/imooc-spike/common"
+	"github.com/aggaer/imooc-spike/datamodels"
+	"github.com/aggaer/imooc-spike/services"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/mvc"
 	"strconv"
